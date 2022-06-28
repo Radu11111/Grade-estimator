@@ -1,0 +1,39 @@
+<script>
+    grade = parseInt(prompt("Your grade please:"))
+//HW2:
+// what would result: -done
+//parseInt(9.9)
+//parseInt(9.1) 
+//parseInt(9.5)
+//parseInt(9.59)
+//the result of each is 9
+LIMIT = 7
+VERY_BAD = 4
+BAD = 6  
+OK = 8
+GOOD = 9
+EXCELENT = 10
+//hw3:
+//1..4-very bad
+//5..6-bad
+//7..8-ok
+// 9  -good
+//10  -excellent
+if (grade > 0 && grade <= VERY_BAD) {
+    alert("VERY BAD")
+}
+else if (grade > VERY_BAD && grade <= BAD) {
+    alert("BAD")
+}else if (grade > BAD && grade <= OK) {
+    alert("OK")
+}
+else if (grade > OK && grade <= GOOD) {
+    alert("GOOD")
+}
+else if (grade > GOOD && grade <= EXCELENT) {
+    alert("EXCELLENT")
+}
+else {
+    alert(grade + "--Your grade does not correspond to  the diapasons")
+}
+</script>
